@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_de_naissance
+    - node.type.auteur
+  module:
+    - datetime
+id: node.auteur.field_date_de_naissance
+field_name: field_date_de_naissance
+entity_type: node
+bundle: auteur
+label: 'Date de naissance'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

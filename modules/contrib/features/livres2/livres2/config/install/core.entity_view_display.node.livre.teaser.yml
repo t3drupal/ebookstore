@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.livre
+  module:
+    - user
+id: node.livre.teaser
+targetEntityType: node
+bundle: livre
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }

@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bande_annonce
+    - node.type.adaptation
+  module:
+    - link
+id: node.adaptation.field_bande_annonce
+field_name: field_bande_annonce
+entity_type: node
+bundle: adaptation
+label: Bande-annonce
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link
