@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Catégorie
+vid: categorie
+description: 'type livres (roman, bd, essai)'
+hierarchy: 0
+weight: 0

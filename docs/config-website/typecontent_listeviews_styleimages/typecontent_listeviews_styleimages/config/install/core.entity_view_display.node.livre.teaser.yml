@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.livre.field_adaptation
+    - field.field.node.livre.field_amazon
+    - field.field.node.livre.field_auteur
+    - field.field.node.livre.field_categorie
+    - field.field.node.livre.field_commentaire
+    - field.field.node.livre.field_couverture
+    - field.field.node.livre.field_date_de_parution
+    - field.field.node.livre.field_editeur
+    - field.field.node.livre.field_extrait
+    - field.field.node.livre.field_fnac
+    - field.field.node.livre.field_theme
+    - field.field.node.livre.field_titre_original
+    - node.type.livre
+  module:
+    - user
+id: node.livre.teaser
+targetEntityType: node
+bundle: livre
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_adaptation: true
+  field_amazon: true
+  field_auteur: true
+  field_categorie: true
+  field_commentaire: true
+  field_couverture: true
+  field_date_de_parution: true
+  field_editeur: true
+  field_extrait: true
+  field_fnac: true
+  field_theme: true
+  field_titre_original: true

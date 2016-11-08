@@ -1,0 +1,134 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - field.field.node.livre.field_adaptation
+    - field.field.node.livre.field_amazon
+    - field.field.node.livre.field_auteur
+    - field.field.node.livre.field_categorie
+    - field.field.node.livre.field_commentaire
+    - field.field.node.livre.field_couverture
+    - field.field.node.livre.field_date_de_parution
+    - field.field.node.livre.field_editeur
+    - field.field.node.livre.field_extrait
+    - field.field.node.livre.field_fnac
+    - field.field.node.livre.field_theme
+    - field.field.node.livre.field_titre_fr
+    - field.field.node.livre.field_titre_original
+    - node.type.livre
+  module:
+    - comment
+    - datetime
+    - image
+    - link
+    - text
+    - user
+id: node.livre.default
+targetEntityType: node
+bundle: livre
+mode: default
+content:
+  field_adaptation:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_amazon:
+    weight: 105
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_auteur:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_categorie:
+    weight: 110
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_commentaire:
+    weight: 103
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+  field_couverture:
+    weight: 107
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_date_de_parution:
+    weight: 106
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_editeur:
+    weight: 112
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_extrait:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_fnac:
+    weight: 104
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_theme:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_titre_fr:
+    weight: 113
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_titre_original:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  links:
+    weight: 100
+hidden:
+  addtoany: true

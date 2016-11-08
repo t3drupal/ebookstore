@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_amazon
+    - node.type.livre
+  module:
+    - link
+id: node.livre.field_amazon
+field_name: field_amazon
+entity_type: node
+bundle: livre
+label: Amazon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link

@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.auteur.body
+    - field.field.node.auteur.field_date_de_naissance
+    - field.field.node.auteur.field_photo
+    - field.field.node.auteur.field_prenom
+    - node.type.auteur
+  module:
+    - text
+    - user
+id: node.auteur.teaser
+targetEntityType: node
+bundle: auteur
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_date_de_naissance: true
+  field_photo: true
+  field_prenom: true

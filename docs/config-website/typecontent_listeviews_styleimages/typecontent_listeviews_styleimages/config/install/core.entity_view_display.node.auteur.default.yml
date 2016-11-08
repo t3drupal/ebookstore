@@ -1,0 +1,58 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.auteur.body
+    - field.field.node.auteur.field_date_de_naissance
+    - field.field.node.auteur.field_nom
+    - field.field.node.auteur.field_photo
+    - field.field.node.auteur.field_prenom
+    - node.type.auteur
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.auteur.default
+targetEntityType: node
+bundle: auteur
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_date_de_naissance:
+    weight: 104
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_nom:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_photo:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_prenom:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  links:
+    weight: 100
+hidden:
+  addtoany: true

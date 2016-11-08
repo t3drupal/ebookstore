@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: couverture_livre
+label: 'couverture livre'
+effects:
+  827533d3-9c04-4681-b2f3-611e797f2858:
+    uuid: 827533d3-9c04-4681-b2f3-611e797f2858
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 264
+      height: 432

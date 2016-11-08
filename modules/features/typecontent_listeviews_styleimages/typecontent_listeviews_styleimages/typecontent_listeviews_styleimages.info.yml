@@ -1,0 +1,22 @@
+name: typecontent-listeviews-styleimages
+description: "- Ajout du champ \"nom\" aux types de contenus \"Auteur\" et \"Livre\"\r\n- Ajout de styles d'images \"couverture livre\" et \"photo auteur\"\r\n- Créations des vues \"Liste des auteur\" et \"Liste des livres\""
+type: module
+core: 8.x
+dependencies:
+  - block
+  - comment
+  - datetime
+  - field
+  - file
+  - image
+  - link
+  - livres2
+  - menu_ui
+  - node
+  - path
+  - rdf
+  - system
+  - taxonomy
+  - text
+  - user
+  - views

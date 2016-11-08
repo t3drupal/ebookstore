@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adaptation
+    - node.type.adaptation
+    - node.type.livre
+id: node.livre.field_adaptation
+field_name: field_adaptation
+entity_type: node
+bundle: livre
+label: Adaptation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      adaptation: adaptation
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

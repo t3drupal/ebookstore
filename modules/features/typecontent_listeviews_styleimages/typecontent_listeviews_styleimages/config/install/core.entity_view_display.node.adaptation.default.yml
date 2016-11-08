@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.adaptation.field_affiche
+    - field.field.node.adaptation.field_bande_annonce
+    - node.type.adaptation
+  module:
+    - image
+    - link
+    - user
+id: node.adaptation.default
+targetEntityType: node
+bundle: adaptation
+mode: default
+content:
+  field_affiche:
+    weight: 101
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_bande_annonce:
+    weight: 102
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  links:
+    weight: 100
+hidden: {  }
