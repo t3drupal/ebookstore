@@ -1,0 +1,13 @@
+name: modif_livre
+type: module
+core: 8.x
+dependencies:
+  - comment
+  - datetime
+  - ds
+  - field_group
+  - image
+  - link
+  - text
+  - typecontent_listeviews_styleimages
+  - user

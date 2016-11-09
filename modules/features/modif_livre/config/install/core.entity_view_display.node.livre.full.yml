@@ -1,0 +1,259 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - core.entity_view_mode.node.full
+    - field.field.node.livre.field_adaptation
+    - field.field.node.livre.field_amazon
+    - field.field.node.livre.field_auteur
+    - field.field.node.livre.field_categorie
+    - field.field.node.livre.field_commentaire
+    - field.field.node.livre.field_couverture
+    - field.field.node.livre.field_date_de_parution
+    - field.field.node.livre.field_editeur
+    - field.field.node.livre.field_extrait
+    - field.field.node.livre.field_fnac
+    - field.field.node.livre.field_theme
+    - field.field.node.livre.field_titre_fr
+    - field.field.node.livre.field_titre_original
+    - image.style.medium
+    - node.type.livre
+  module:
+    - comment
+    - datetime
+    - ds
+    - field_group
+    - image
+    - link
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_livre_0:
+      children:
+        - field_extrait
+      parent_name: group_tabs
+      weight: 11
+      label: Résumé
+      format_type: tab
+      format_settings:
+        direction: vertical
+        classes: ''
+        id: ''
+        formatter: closed
+        description: ''
+    group_livre_1:
+      children: {  }
+      parent_name: group_tabs
+      weight: 12
+      label: Couverture
+      format_type: tab
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        id: ''
+        direction: vertical
+    group_livre_2:
+      children:
+        - field_commentaire
+      parent_name: group_tabs
+      weight: 13
+      label: Commentaires
+      format_type: tab
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        id: ''
+    group_tabs:
+      children:
+        - group_livre_0
+        - group_livre_1
+        - group_livre_2
+        - group_livre_3
+        - group_livre_4
+      parent_name: ''
+      weight: 8
+      label: tabs
+      format_type: tabs
+      format_settings:
+        label: tabs
+        direction: horizontal
+        id: ''
+        classes: ''
+    group_livre_3:
+      children: {  }
+      parent_name: group_tabs
+      weight: 14
+      label: Notes
+      format_type: tab
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        id: ''
+    group_couv:
+      children:
+        - field_couverture
+      parent_name: ''
+      weight: 1
+      label: div_couv
+      format_type: html_element
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        effect: none
+        speed: fast
+        attributes: ''
+        classes: ''
+        id: ''
+    group_infos:
+      children:
+        - field_titre_fr
+        - field_titre_original
+        - field_auteur
+        - field_date_de_parution
+        - field_editeur
+        - field_fnac
+        - field_amazon
+      parent_name: ''
+      weight: 2
+      label: div_infos
+      format_type: html_element
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        effect: none
+        speed: fast
+        attributes: ''
+        classes: ''
+        id: ''
+    group_livre_4:
+      children:
+        - field_adaptation
+      parent_name: group_tabs
+      weight: 15
+      label: Adaptation
+      format_type: tab
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        id: ''
+id: node.livre.full
+targetEntityType: node
+bundle: livre
+mode: full
+content:
+  field_adaptation:
+    weight: 4
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+  field_amazon:
+    weight: 14
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_auteur:
+    weight: 10
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_categorie:
+    weight: 5
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_commentaire:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+  field_couverture:
+    weight: 7
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings:
+      ds:
+        ds_limit: '1'
+    type: image
+  field_date_de_parution:
+    weight: 11
+    label: hidden
+    settings:
+      future_format: '@interval hence'
+      past_format: '@interval ago'
+      granularity: 2
+    third_party_settings: {  }
+    type: datetime_time_ago
+  field_editeur:
+    weight: 12
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_extrait:
+    weight: 102
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_fnac:
+    weight: 13
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_theme:
+    weight: 6
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_titre_fr:
+    type: text_default
+    weight: 8
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_titre_original:
+    weight: 9
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  links:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
