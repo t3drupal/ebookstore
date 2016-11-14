@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b567b38f-b0e9-42cf-a480-6c284cc8980b'
+  module:
+    - block_content
+    - system
+  theme:
+    - drupal8_zymphonies_theme
+id: funfacts
+theme: drupal8_zymphonies_theme
+region: funfacts
+weight: 0
+provider: null
+plugin: 'block_content:b567b38f-b0e9-42cf-a480-6c284cc8980b'
+settings:
+  id: 'block_content:b567b38f-b0e9-42cf-a480-6c284cc8980b'
+  label: 'Fun facts'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

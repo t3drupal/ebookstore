@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - options
+id: comment.field_note_livre
+field_name: field_note_livre
+entity_type: comment
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: 'A chier'
+    -
+      value: 1
+      label: Bof
+    -
+      value: 2
+      label: 'Pas mal'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:371c933a-98ab-4c74-b579-85c8d192929b'
+  module:
+    - block_content
+    - system
+  theme:
+    - ebook
+id: bienvenueebook
+theme: ebook
+region: welcome_banner_text
+weight: 0
+provider: null
+plugin: 'block_content:371c933a-98ab-4c74-b579-85c8d192929b'
+settings:
+  id: 'block_content:371c933a-98ab-4c74-b579-85c8d192929b'
+  label: 'Bienvenue Ebook'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front></front>'
+    negate: false
+    context_mapping: {  }

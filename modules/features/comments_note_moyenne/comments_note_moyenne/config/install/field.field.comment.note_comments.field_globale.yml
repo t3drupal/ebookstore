@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.note_comments
+    - field.storage.comment.field_globale
+  module:
+    - options
+id: comment.note_comments.field_globale
+field_name: field_globale
+entity_type: comment
+bundle: note_comments
+label: Globale
+description: 'Note globale du livre'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.categorie.field_illustration
+    - image.style.thumbnail
+    - taxonomy.vocabulary.categorie
+  module:
+    - image
+    - path
+    - text
+id: taxonomy_term.categorie.default
+targetEntityType: taxonomy_term
+bundle: categorie
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 0
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_illustration:
+    weight: 31
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  name:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

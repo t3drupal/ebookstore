@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.adaptation.field_affiche
+    - field.field.node.adaptation.field_bande_annonce
+    - node.type.adaptation
+  module:
+    - user
+id: node.adaptation.teaser
+targetEntityType: node
+bundle: adaptation
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  addtoany: true
+  field_affiche: true
+  field_bande_annonce: true

@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.note_comments
+    - field.storage.comment.field_personnages
+  module:
+    - options
+id: comment.note_comments.field_personnages
+field_name: field_personnages
+entity_type: comment
+bundle: note_comments
+label: Personnages
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

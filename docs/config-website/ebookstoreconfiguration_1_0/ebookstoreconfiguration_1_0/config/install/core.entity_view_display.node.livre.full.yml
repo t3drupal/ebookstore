@@ -1,0 +1,259 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.note_comments.default
+    - core.entity_view_mode.node.full
+    - field.field.node.livre.field_adaptation
+    - field.field.node.livre.field_amazon
+    - field.field.node.livre.field_auteur
+    - field.field.node.livre.field_categorie
+    - field.field.node.livre.field_commentaire
+    - field.field.node.livre.field_couverture
+    - field.field.node.livre.field_couverture_principale
+    - field.field.node.livre.field_date_de_parution
+    - field.field.node.livre.field_editeur
+    - field.field.node.livre.field_extrait
+    - field.field.node.livre.field_fnac
+    - field.field.node.livre.field_note_livre
+    - field.field.node.livre.field_theme
+    - field.field.node.livre.field_titre_fr
+    - field.field.node.livre.field_titre_original
+    - image.style.couverture_livre
+    - node.type.livre
+  module:
+    - comment
+    - datetime
+    - ds
+    - field_group
+    - image
+    - link
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked_fluid
+      path: modules/contrib/ds
+      library: layout_plugin/ds_2col_stacked_fluid
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          header: {  }
+          left: {  }
+          right: {  }
+          footer: {  }
+    regions:
+      footer:
+        - field_couverture
+        - field_adaptation
+        - group_tabglobal
+        - group_tabextrait
+        - group_tabadaptation
+        - group_othercovers
+        - field_extrait
+      header:
+        - field_titre_fr
+        - field_titre_original
+      left:
+        - field_couverture_principale
+      right:
+        - field_auteur
+        - field_editeur
+        - field_date_de_parution
+        - field_categorie
+        - field_theme
+        - field_amazon
+        - field_fnac
+        - field_note_livre
+        - addtoany
+  field_group:
+    group_tabglobal:
+      children:
+        - group_tabextrait
+        - group_tabadaptation
+        - group_othercovers
+      parent_name: ''
+      weight: 12
+      label: TabGlobal
+      format_type: tabs
+      format_settings:
+        label: TabGlobal
+        direction: horizontal
+        id: ''
+        classes: ''
+    group_othercovers:
+      children:
+        - field_couverture
+      parent_name: group_tabglobal
+      weight: 15
+      label: 'Autres couvertures'
+      format_type: tab
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        id: ''
+        direction: vertical
+    group_tabextrait:
+      children:
+        - field_extrait
+      parent_name: group_tabglobal
+      weight: 13
+      label: Extrait
+      format_type: tab
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        id: ''
+        direction: vertical
+    group_tabadaptation:
+      children:
+        - field_adaptation
+      parent_name: group_tabglobal
+      weight: 14
+      label: Adaptations
+      format_type: tab
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        id: ''
+id: node.livre.full
+targetEntityType: node
+bundle: livre
+mode: full
+content:
+  addtoany:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+  field_adaptation:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+  field_amazon:
+    type: link
+    weight: 8
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_auteur:
+    type: entity_reference_entity_id
+    weight: 3
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_categorie:
+    type: entity_reference_entity_view
+    weight: 6
+    label: inline
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+  field_couverture:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+  field_couverture_principale:
+    type: image
+    weight: 2
+    label: hidden
+    settings:
+      image_style: couverture_livre
+      image_link: ''
+    third_party_settings: {  }
+  field_date_de_parution:
+    type: datetime_custom
+    weight: 5
+    label: inline
+    settings:
+      timezone_override: ''
+      date_format: d-m-Y
+    third_party_settings: {  }
+  field_editeur:
+    type: entity_reference_entity_view
+    weight: 4
+    label: inline
+    settings:
+      view_mode: compact
+      link: false
+    third_party_settings: {  }
+  field_extrait:
+    type: text_default
+    weight: 15
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_fnac:
+    type: link
+    weight: 9
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_note_livre:
+    type: comment_default
+    weight: 10
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+  field_theme:
+    type: entity_reference_entity_view
+    weight: 7
+    label: inline
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings:
+      ds:
+        ds_limit: ''
+  field_titre_fr:
+    type: text_default
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_titre_original:
+    type: text_default
+    weight: 1
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_commentaire: true
+  links: true

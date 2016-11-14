@@ -1,0 +1,10 @@
+disabled: false
+field_template: false
+ft-default: default
+ft-show-colon: false
+classes:
+  region:
+    - groupheaderblock
+    - ''
+  field: {  }
+use_field_names: true

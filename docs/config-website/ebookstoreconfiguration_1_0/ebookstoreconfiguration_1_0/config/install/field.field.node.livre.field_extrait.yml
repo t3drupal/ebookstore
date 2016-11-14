@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_extrait
+    - node.type.livre
+  module:
+    - text
+id: node.livre.field_extrait
+field_name: field_extrait
+entity_type: node
+bundle: livre
+label: Extrait
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

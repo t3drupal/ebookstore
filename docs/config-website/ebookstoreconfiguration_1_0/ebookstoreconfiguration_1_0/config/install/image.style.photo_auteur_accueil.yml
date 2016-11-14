@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: photo_auteur_accueil
+label: photo_auteur_accueil
+effects:
+  ae7b41af-a98f-43a5-8cea-4cc60102d27b:
+    uuid: ae7b41af-a98f-43a5-8cea-4cc60102d27b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 200

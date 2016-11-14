@@ -1,0 +1,36 @@
+name: EbookstoreConfiguration-1.0
+type: module
+core: 8.x
+dependencies:
+  - block
+  - block_content
+  - ckeditor
+  - comment
+  - comments_note_moyenne
+  - contact
+  - datetime
+  - ds
+  - editor
+  - features
+  - field
+  - field_group
+  - file
+  - filter
+  - help
+  - image
+  - link
+  - menu_ui
+  - node
+  - options
+  - path
+  - rdf
+  - search
+  - shortcut
+  - system
+  - taxonomy
+  - text
+  - tour
+  - typecontent_listeviews_styleimages
+  - user
+  - views
+  - views_ui

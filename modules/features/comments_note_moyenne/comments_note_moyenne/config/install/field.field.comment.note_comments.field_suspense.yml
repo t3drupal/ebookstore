@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.note_comments
+    - field.storage.comment.field_suspense
+  module:
+    - options
+id: comment.note_comments.field_suspense
+field_name: field_suspense
+entity_type: comment
+bundle: note_comments
+label: Suspense
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

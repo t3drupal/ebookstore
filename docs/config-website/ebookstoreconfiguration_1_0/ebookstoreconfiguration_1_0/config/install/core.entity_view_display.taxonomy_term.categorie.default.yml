@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.categorie.field_illustration
+    - taxonomy.vocabulary.categorie
+id: taxonomy_term.categorie.default
+targetEntityType: taxonomy_term
+bundle: categorie
+mode: default
+content: {  }
+hidden:
+  description: true
+  field_illustration: true

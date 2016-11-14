@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: photo_auteur
+label: 'photo auteur'
+effects:
+  56c813ce-3acb-4c93-bb06-f13767b36e50:
+    uuid: 56c813ce-3acb-4c93-bb06-f13767b36e50
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 130
+      height: 162

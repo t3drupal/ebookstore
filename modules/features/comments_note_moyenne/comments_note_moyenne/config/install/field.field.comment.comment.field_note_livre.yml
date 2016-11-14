@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+    - field.storage.comment.field_note_livre
+  module:
+    - options
+id: comment.comment.field_note_livre
+field_name: field_note_livre
+entity_type: comment
+bundle: comment
+label: 'Note livre'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

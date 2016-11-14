@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: image_livre_accueil
+label: image_livre_accueil
+effects:
+  d03f9ebb-20a3-457b-bac2-a4e13a40f002:
+    uuid: d03f9ebb-20a3-457b-bac2-a4e13a40f002
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 180
+      height: 280

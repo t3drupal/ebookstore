@@ -1,0 +1,63 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.note_comments
+    - field.field.comment.note_comments.field_addictivite
+    - field.field.comment.note_comments.field_ecriture
+    - field.field.comment.note_comments.field_globale
+    - field.field.comment.note_comments.field_originalite
+    - field.field.comment.note_comments.field_personnages
+    - field.field.comment.note_comments.field_scenario
+    - field.field.comment.note_comments.field_suspense
+  module:
+    - options
+id: comment.note_comments.default
+targetEntityType: comment
+bundle: note_comments
+mode: default
+content:
+  field_addictivite:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_ecriture:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_globale:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_originalite:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_personnages:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_scenario:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_suspense:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+hidden:
+  links: true

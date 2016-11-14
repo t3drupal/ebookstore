@@ -38,6 +38,7 @@
   .group-header div:nth-child(2){ color:green; }
 
 .group-left{  width:150px; }
+  .group-left .quickedit-field{  border:1px solid purple; width:264px; }
 .group-right{  }
 .group-footer{   padding-top:100px; }
 

@@ -1,0 +1,167 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.livre.field_adaptation
+    - field.field.node.livre.field_amazon
+    - field.field.node.livre.field_auteur
+    - field.field.node.livre.field_categorie
+    - field.field.node.livre.field_commentaire
+    - field.field.node.livre.field_couverture
+    - field.field.node.livre.field_date_de_parution
+    - field.field.node.livre.field_editeur
+    - field.field.node.livre.field_extrait
+    - field.field.node.livre.field_fnac
+    - field.field.node.livre.field_note_livre
+    - field.field.node.livre.field_theme
+    - field.field.node.livre.field_titre_fr
+    - field.field.node.livre.field_titre_original
+    - image.style.thumbnail
+    - node.type.livre
+  module:
+    - comment
+    - datetime
+    - image
+    - link
+    - path
+    - text
+id: node.livre.default
+targetEntityType: node
+bundle: livre
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+  field_adaptation:
+    weight: 14
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_amazon:
+    weight: 11
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_auteur:
+    weight: 15
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_categorie:
+    weight: 16
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_commentaire:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
+  field_couverture:
+    weight: 13
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_date_de_parution:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_editeur:
+    weight: 18
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_extrait:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_fnac:
+    weight: 10
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_note_livre:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: comment_default
+  field_theme:
+    weight: 17
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_titre_fr:
+    weight: 19
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+  field_titre_original:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+  path:
+    type: path
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

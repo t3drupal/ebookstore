@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: note_comments
+label: 'Note comments'
+target_entity_type_id: node
+description: 'Permet de donner des notes au content'

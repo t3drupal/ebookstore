@@ -1,0 +1,112 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.livre.field_adaptation
+    - field.field.node.livre.field_amazon
+    - field.field.node.livre.field_auteur
+    - field.field.node.livre.field_categorie
+    - field.field.node.livre.field_commentaire
+    - field.field.node.livre.field_couverture
+    - field.field.node.livre.field_couverture_principale
+    - field.field.node.livre.field_date_de_parution
+    - field.field.node.livre.field_editeur
+    - field.field.node.livre.field_extrait
+    - field.field.node.livre.field_fnac
+    - field.field.node.livre.field_note_livre
+    - field.field.node.livre.field_theme
+    - field.field.node.livre.field_titre_fr
+    - field.field.node.livre.field_titre_original
+    - node.type.livre
+  module:
+    - ds
+    - field_group
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked
+      path: modules/contrib/ds
+      library: layout_plugin/ds_2col_stacked
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+          header: {  }
+          left: {  }
+          right: {  }
+          footer: {  }
+    regions: {  }
+  field_group:
+    group_tabtest:
+      children:
+        - group_test1
+        - group_test2
+      parent_name: ''
+      weight: 5
+      label: tab
+      format_type: tabs
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        id: ''
+        direction: vertical
+    group_test1:
+      children:
+        - node_changed_date
+      parent_name: group_tabtest
+      weight: 8
+      label: test1
+      format_type: tab
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        id: ''
+    group_test2:
+      children: {  }
+      parent_name: group_tabtest
+      weight: 9
+      label: test2
+      format_type: tab
+      format_settings:
+        formatter: closed
+        description: ''
+        classes: ''
+        id: ''
+id: node.livre.teaser
+targetEntityType: node
+bundle: livre
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  addtoany: true
+  field_adaptation: true
+  field_amazon: true
+  field_auteur: true
+  field_categorie: true
+  field_commentaire: true
+  field_couverture: true
+  field_couverture_principale: true
+  field_date_de_parution: true
+  field_editeur: true
+  field_extrait: true
+  field_fnac: true
+  field_note_livre: true
+  field_theme: true
+  field_titre_fr: true
+  field_titre_original: true

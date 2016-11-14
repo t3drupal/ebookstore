@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titre_original
+    - node.type.livre
+  module:
+    - text
+id: node.livre.field_titre_original
+field_name: field_titre_original
+entity_type: node
+bundle: livre
+label: 'Titre original'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
