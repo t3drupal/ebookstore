@@ -1,0 +1,6 @@
+name: Ebs
+type: module
+description: "ebs"
+core: 8.x
+version: 8.x-1.11
+dependencies:

@@ -25,6 +25,7 @@ global-components:
   js:  
     js/jquery.smartmenus.min.js: {}
     js/custom.js: {}
+    js/user8form.js: {}
   dependencies:
     - core/jquery
     - core/drupal.ajax
