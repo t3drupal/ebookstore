@@ -8,6 +8,7 @@ package: core
 libraries:
   - drupal8_zymphonies_theme/bootstrap
   - drupal8_zymphonies_theme/global-components
+  - drupal8_zymphonies_theme/owlcarousel
 
 #Regions
 regions:

@@ -1,0 +1,11 @@
+<?php
+
+function ebs_user_presave(Drupal\Core\Entity\EntityInterface $entity) {
+  $lecteur= $entity->get('field_lecteur')->value;
+  if ($lecteur == 1){
+	$entity->addRole('lecteur');
+  }
+  else {
+	$entity->addRole('editeur');
+  }
+}

@@ -1,18 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
-/*#block-views-block-top-categories-block-1 .blockcategory .views-col .col-1 { color:red; background-color: #00BCD4; border:5px solid #FFFFFF}
-.block .col-2  { background-color: #00e5ff; border:5px solid #FFFFFF}
-.block .col-3  { background-color: #19c2c8; border:5px solid #FFFFFF}
-.block .col-4  { background-color: #5bc0de; border:5px solid #FFFFFF}
+#wrapper, .container{ font-family: 'Montserrat', sans-serif; }
 
-.block .col-1 img { z-index:1; border:3px solid red; }
-.block .col-1 .quickedit-field{ color:yellow; z-index: 2}
+.#search-block-form input { color: #666; }
 
-.blockcategory .views-view-grid .views-col:first-child{ background-color: #19c2c8; border:5px solid #FFFFFF; color:#FFFFFF }
-.blockcategory .views-view-grid .views-col:last-child{ background-color: green; border:5px solid #FFFFFF; color:#FFFFFF }*/
+/* BUTTON DEVENIR MEMBRE */
+.register-member-block{ background-color: #FFFFFF; height:100px; }
+.btn-register-custom{ background-color: #19c2c8; padding:10px; float: right;  height:50px; }
+.btn-register-custom a{ color:#FFFFFF; text-decoration:none; font-size:14px; }
+  .btn-register-custom a:hover{ color:#FFFFFF; text-decoration:underline; font-size:14px; }
 
 
 /* TOP THEME BLOCK */
-
 .topbooknew h2{ color: #000; text-align:center;  font-weight:bold; margin-bottom:50px }
 
 /* TOP THEME BLOCK */
@@ -34,12 +33,75 @@
 
 /* CONTENT TYPE LIVRE */
 .group-header{  }
-  .group-header div:nth-child(1){ color:red; }
-  .group-header div:nth-child(2){ color:green; }
+  .group-header>div:first-child { color:#19c2c8; font-size:30px; font-weight:bold; }
+    .group-header>div:first-of-type + div { color:#707070; font-size:20px; }
+
+  /*.group-header div:nth-child(2){ color:green; }*/
 
 .group-left{  width:150px; }
   .group-left .quickedit-field{  border:1px solid purple; width:264px; }
 .group-right{  }
 .group-footer{   padding-top:100px; }
+.group-footer .field-group-tabs-wrapper .horizontal-tabs{ border:none; }
+ .group-footer .field-group-tabs-wrapper .horizontal-tabs .horizontal-tabs-list{border-bottom:1px solid #707070; background-color: #FFFFFF; }
+ .group-footer .horizontal-tabs ul.horizontal-tabs-list li a .horizontal-tabs ul.horizontal-tabs-list li.selected a { background-color: #19c2c8   }
+
+/***** LIST EBOOK *****/
+/* title view*/
+.listbook-view header{ overflow: hidden; text-align: center; margin-bottom:20px; margin-top:20px;}
+  .listbook-view header h2 { color: #1a1a1a ; display: inline-block; padding: 0 15px; position: relative; font-size:35px; }
+    .listbook-view header h2:before, .listbook-view header h2:after { background: #ddd; content: ""; display: block; height: 1px; position: absolute; top: 50%; width: 400%; }
+    .listbook-view header h2:before { right: 100%;  }
+    .listbook-view header h2:after { left: 100%; }
+  .listbook-view header p { color:#666; margin-left: auto; margin-right: auto; width: 600px; }
+
+/* book view*/
+.imgbook-listbook a img{  width:264px; margin-right:auto; margin-left:auto; }
+.title-listbook{text-align:center; padding-top:7px; padding-bottom:5px; }
+  .title-listbook a{ text-decoration: none; color:#000;  }
+    .title-listbook a:hover{ text-decoration: none;  }
+
+.moredetails-listbook{ width:150px; margin-right:auto; margin-left:auto; border:1px solid #666; color:#666; text-align:center;  margin-bottom:15px; border-radius:3px; }
+.moredetails-listbook a{ border:none; }
+.moredetails-listbook a:hover{ text-decoration: none; color:#FFFFFF; }
+
+.moredetails-listbook:hover{ background-color: #19c2c8; width:150px; margin-right:auto; margin-left:auto; border:1px solid #19c2c8; color:#FFFFFF; text-align:center; border-radius:3px; }
+
+.borderbook-listbook{ padding:10px; border:2px solid #FFFFFF; border-radius:3px;  }
+/*.borderbook-listbook:hover{ border:2px solid #19c2c8; border-radius:3px; }
+.borderbook-listbook::before {
+  border-left:2px solid #666;
+  border-bottom:2px solid #666;
+  -webkit-transform-origin: 0 100%;
+}
+
+.borderbook-listbook::after {
+  border-top: 3px solid #19c2c8;
+  border-right: 3px solid #19c2c8;
+  -webkit-transform-origin: 100% 0%;
+}*/
 
 
+/******* FRONTPAGE *******/
+/* TOP 5 AUTHORS*/
+.top5author-frontpage{  }
+.top5author-frontpage header{ overflow: hidden; text-align: center; margin-bottom:10px; margin-top:20px;}
+  .top5author-frontpage header h2 { color: #1a1a1a ; display: inline-block; padding: 0 15px; position: relative; font-size:35px; }
+    .top5author-frontpage header h2:before, .top5author-frontpage header h2:after { background: #ddd; content: ""; display: block; height: 1px; position: absolute; top: 50%; width: 400%; }
+    .top5author-frontpage header h2:before { right: 100%;  }
+    .top5author-frontpage header h2:after { left: 100%; }
+  .top5author-frontpage header p { color:#666; margin-left: auto; margin-right: auto; width: 600px; }
+
+/* TOP 5 AUTHORS*/
+.top5newbook-frontpage{  }
+.top5newbook-frontpage header{ overflow: hidden; text-align: center; margin-bottom:10px; margin-top:20px;}
+  .top5newbook-frontpage header h2 { color: #1a1a1a ; display: inline-block; padding: 0 15px; position: relative; font-size:35px; }
+    .top5newbook-frontpage header h2:before, .top5newbook-frontpage header h2:after { background: #ddd; content: ""; display: block; height: 1px; position: absolute; top: 50%; width: 400%; }
+    .top5newbook-frontpage header h2:before { right: 100%;  }
+    .top5newbook-frontpage header h2:after { left: 100%; }
+  .top5newbook-frontpage header p { color:#666; margin-left: auto; margin-right: auto; width: 600px; }
+
+/* LAST COMMENTS */
+.lastcomments-frontpage{ border:1px solid 19c2c8; }
+
+.titlelastcomment-frontpage{ color:#19c2c8; font-size:15px; }

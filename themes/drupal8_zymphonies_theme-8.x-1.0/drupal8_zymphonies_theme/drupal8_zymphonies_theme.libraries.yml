@@ -22,7 +22,7 @@ global-components:
       css/font-awesome.css: {}
       css/custom-style.css: {}
       css/custom-media.css: {}
-  js:  
+  js:
     js/jquery.smartmenus.min.js: {}
     js/custom.js: {}
   dependencies:
@@ -31,3 +31,17 @@ global-components:
     - core/drupal
     - core/drupalSettings
     - core/jquery.once
+
+owlcarousel:
+  Version: 1.x
+  css:
+    theme:
+      css/comment-slider.css: {}
+  js:
+    vendor/owlcarousel/owl.carousel.min.js: {}
+    js/comment-slider.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings

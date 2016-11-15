@@ -60,8 +60,12 @@
 
 
 <!-- Header and Navbar -->
+
+
 <header class="main-header">
   <nav class="navbar navbar-default" role="navigation">
+
+
     <div class="container">
       <div class="row">
       <div class="navbar-header col-md-3">
@@ -77,12 +81,24 @@
       </div>
 
       <!-- Navigation -->
-      <div class="col-md-9">
+      <div class="col-md-6">
         {% if page.primary_menu %}
           {{ page.primary_menu }}
         {% endif %}
       </div>
       <!--End Navigation -->
+
+      <!-- Register Block -->
+      {% if is_front %}
+      <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="btn-register-custom"><a href="user/register">Devenir membre ?</a></div>
+              </div>
+            </div>
+      </div>
+      {% endif %}
+      <!-- End Register Block -->
 
       </div>
     </div>
